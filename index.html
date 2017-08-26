@@ -14,42 +14,75 @@
 	<meta name="twitter:title" content="A TEXT">
 	<meta name="twitter:description" content="A TEXT">
 	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
 		.site_name{
+			width: 100%;
 			font-weight: bold;
 			font-size: 25px;
 			background-color: lightgrey;
+			position: absolute;
+			top: 0;
+		}
+		.text_block{
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 40px;
 		}
 		.en_text{
 			font-weight: bold;
 			font-size: 30px;
+			margin: 0 0 10px 20px;
+			
 		}
 		.cn_text{
 			font-weight: bold;
 			font-size: 20px;
+			margin: 0 0 10px 20px;
 		}
-		.en_resume{
-			font-size: 15px;
+		
+		.resume_block{
+			width: 100%;
+			background-color: lightgrey;
+			position: absolute;
+			bottom: 0;
 		}
-		.cn_resume{
+		.en_resume,.cn_resume{
+			display:block;
+			width: 500px;
 			font-size: 15px;
+			margin: 0 0 0 20px;
+			padding: 0;
+			float: left;
 		}
 		.text_time{
 			font-size: 15px;
+			margin: 0 0 10px 20px;
+			border-bottom: 1px solid black;
 		}
 	</style>
 </head>
 <body>
-  <div class='site_name'>A TEXT 只言片语</div>
+  <div class='site_name'>&nbsp;&nbsp;&nbsp;&nbsp;A TEXT 只言片语</div>
   <hr/>
-  <div class="en_text">Good Mind, Good Life.</div>
-  <div class="cn_text">好思想，好生活。</div>
-  <div class="text_time">Created at 2017-08-26 13:00</div>
-  <hr/>
-  <div class="en_resume">I'm xu bao xiang, a Java programmer with 7 years experience. <br/>
-	mail to me if you like to contact me. <br/>My E-mail : xu_baoxiang@126.com
+  <div class="text_block">
+	  <!-- A Text Start -->
+	  <div class="en_text">Good Mind, Good Life.</div>
+	  <div class="cn_text">好思想，好生活。</div>
+	  <div class="text_time">Created at 2017-08-26 13:00</div>
+	  <!-- A Text End -->
   </div>
-  <div class="zh_resume">我是许保祥, 一个有7年工作经验的Java程序员。<br/>
-	如果你愿意联系我，可以发邮件给我。<br/>我的电子邮箱是： xu_baoxiang@126.com
+  <div class="resume_block">
+	  <div class="en_resume">I'm xu bao xiang, a Java programmer with 7 years experience. <br/>
+		mail to me if you like to contact me. <br/>My E-mail : <a href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
+	  </div>
+	  <div class="zh_resume">我是许保祥, 一个有7年工作经验的Java程序员。<br/>
+		如果你愿意联系我，可以发邮件给我。<br/>我的电子邮箱是： <a href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
+	  </div>
   </div>
+  
 </body>
 </html>
