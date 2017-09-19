@@ -24,15 +24,18 @@
             font-weight: bold;
             font-size: 25px;
             background-color: lightgrey;
-            position: absolute;
-            top: 0;
+        }
+
+        .content_block{
+            display: block;
+            list-style: none;
         }
 
         .text_block {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 40px;
+            width: 68%;
+            height: 500px;
+            overflow: scroll;
+            display: block;
         }
 
         .first_text {
@@ -49,9 +52,9 @@
         }
 
         .resume_block {
-            width: 100%;
+            width: 30%;
+            display: block;
             background-color: lightgrey;
-            position: absolute;
             bottom: 0;
         }
 
@@ -70,50 +73,56 @@
     </style>
 </head>
 <body>
-<div class='site_name'>&nbsp;&nbsp;&nbsp;&nbsp;A TEXT 只言片语</div>
+<div class='site_name'>A TEXT 只言片语</div>
 <hr/>
-<div class="text_block">
-    <!-- A Text Start -->
-    <div class="first_text">Good Mind, Good Life.</div>
-    <div class="second_text">好思想，好生活。</div>
-    <div class="text_time">Created at 2017-08-26 13:00</div>
-    <!-- A Text End -->
-    <!-- A Text Start -->
-    <div class="first_text">剪不断，理还乱。</div>
-    <div class="text_time">Created at 2017-08-28 09:56</div>
-    <!-- A Text End -->
-    <!-- A Text Start -->
-    <div class="first_text">清官难断家务事。</div>
-    <div class="text_time">Created at 2017-08-28 09:57</div>
-    <!-- A Text End -->
-    <!-- A Text Start -->
-    <div class="first_text">对于人生的成功来说，工具是辅助因素，而不是决定因素。这些工具如电脑，手机等。</div>
-    <div class="text_time">Created at 2017-08-30 12:06</div>
-    <!-- A Text End -->
-    <!-- A Text Start -->
-    <div class="first_text">定期解决高优先级技术债务问题可以实现产品的持续健康度。</div>
-    <div class="text_time">Created at 2017-08-31 12:39</div>
-    <!-- A Text End -->
-    <!-- A Text Start -->
-    <div class="first_text">一曲《笑傲江湖》</div>
-    <div class="text_time">Created at 2017-09-05 18:27</div>
-    <!-- A Text End -->
-    <!-- A Text Start -->
-    <div class="first_text">看过鲁迅的文章，觉得这个人说的还是比较实在的，还是有些道理的。</div>
-    <div class="text_time">Created at 2017-09-05 18:28</div>
-    <!-- A Text End -->
-</div>
-<div class="resume_block">
-    <div class="first_resume">I'm xu bao xiang, a Java programmer with 7 years experience. <br/>
-        Mail to me if you like to contact me. <br/>My E-mail : <a
-                href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
-    </div>
-    <br/>
-    <div class="second_resume">我是许保祥, 一个有7年工作经验的Java程序员。<br/>
-        如果你愿意联系我，可以发邮件给我。<br/>我的电子邮箱是： <a href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
-    </div>
-    <br/>
-</div>
+<ul class="content_block">
+    <li class="text_block">
+        <!-- A Text Start -->
+        <div class="first_text">Good Mind, Good Life.</div>
+        <div class="second_text">好思想，好生活。</div>
+        <div class="text_time">Created at 2017-08-26 13:00</div>
+        <!-- A Text End -->
+        <!-- A Text Start -->
+        <div class="first_text">剪不断，理还乱。</div>
+        <div class="text_time">Created at 2017-08-28 09:56</div>
+        <!-- A Text End -->
+        <!-- A Text Start -->
+        <div class="first_text">清官难断家务事。</div>
+        <div class="text_time">Created at 2017-08-28 09:57</div>
+        <!-- A Text End -->
+        <!-- A Text Start -->
+        <div class="first_text">对于人生的成功来说，工具是辅助因素，而不是决定因素。这些工具如电脑，手机等。</div>
+        <div class="text_time">Created at 2017-08-30 12:06</div>
+        <!-- A Text End -->
+        <!-- A Text Start -->
+        <div class="first_text">定期解决高优先级技术债务问题可以实现产品的持续健康度。</div>
+        <div class="text_time">Created at 2017-08-31 12:39</div>
+        <!-- A Text End -->
+        <!-- A Text Start -->
+        <div class="first_text">一曲《笑傲江湖》</div>
+        <div class="text_time">Created at 2017-09-05 18:27</div>
+        <!-- A Text End -->
+        <!-- A Text Start -->
+        <div class="first_text">看过鲁迅的文章，觉得这个人说的还是比较实在的，还是有些道理的。</div>
+        <div class="text_time">Created at 2017-09-05 18:28</div>
+        <!-- A Text End -->
+        <!-- A Text Start -->
+        <div class="first_text">忙碌起来吧，小伙伴们！</div>
+        <div class="text_time">Created at 2017-09-19 17:36</div>
+        <!-- A Text End -->
+    </li>
+    <li class="resume_block">
+        <div class="first_resume">I'm xu bao xiang, a Java programmer with 7 years experience. <br/>
+            Mail to me if you like to contact me. <br/>My E-mail : <a
+                    href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
+        </div>
+        <br/>
+        <div class="second_resume">我是许保祥, 一个有7年工作经验的Java程序员。<br/>
+            如果你愿意联系我，可以发邮件给我。<br/>我的电子邮箱是： <a href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
+        </div>
+        <br/>
+    </li>
+</ul>
 
 </body>
 </html>
