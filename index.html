@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>A TEXT</title>
+    <title>一文</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="A TEXT">
     <meta property="og:type" content="website">
@@ -16,34 +16,41 @@
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 <body>
-<div class='site_name'>A TEXT 只言片语</div>
+<div class='site_name'>一文 by Paul Xu</div>
 <hr/>
-<ul class="content_block">
-    <li class="text_block" id="text_block">
-        
-    </li>
-    <li class="resume_block">
-        <div class="first_resume">I'm xu bao xiang, a Java programmer with 7 years experience. <br/>
-            Mail to me if you like to contact me. <br/>My E-mail : <a
-                    href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
-        </div>
-        <br/>
-        <div class="second_resume">我是许保祥, 一个有7年工作经验的Java程序员。<br/>
-            如果你愿意联系我，可以发邮件给我。<br/>我的电子邮箱是： <a href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
-        </div>
-        <br/>
-    </li>
-</ul>
+<div class="content_block" id="content_block">
+
+</div>
+<div class="resume_block" id="resume_block">
+    <ul>
+        <li>
+            I'm Paul Xu, a Java programmer with 7 years experience.
+            If you need a java programmer with remote work, please mail to me.
+        </li>
+        <li>
+            我的名字是许保祥, 一个有7年工作经验的Java程序员。如果你需要一个Java远程开发人员，请发邮件给我。
+        </li>
+        <li>
+            Email：<a href="mailto:xu_baoxiang@126.com">xu_baoxiang@126.com</a>
+        </li>
+    </ul>
+</div>
 
 </body>
 
-<script type="text/html" id="tips_template">
-	<@ _.each(data, function(eachData, index){ @>
-	<!-- A Text Start -->
-	<div class="first_text"><@= index + 1 @><@= eachData.firstText@></div>
-	<div class="text_time"><@= eachData.textTime@></div>
-	<!-- A Text End -->
-	<@ }) @>
+<script type="text/html" id="content_template">
+    <ul>
+        <li class="statistic_block" id="statistic_block">
+            共发表文章：<@= data.length @> 篇
+        </li>
+        <@ _.each(data, function(eachData, index){ @>
+        <li class="text_block" id="text_block">
+            <div class="text_title"><@= eachData.textTitle @></div>
+            <div class="text_time">发布日期：<@= eachData.textTime @></div>
+            <div class="text_content"><@= eachData.textContent @></div>
+        </li>
+        <@ }) @>
+    </ul>
 </script>
 <script type="text/javascript" src="plugins/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="plugins/underscore/underscore-min.js"></script>

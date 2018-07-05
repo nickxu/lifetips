@@ -4,54 +4,83 @@
     padding: 0;
 }
 
-.site_name {
+html, body {
+    display: block;
+    height: 100%;
     width: 100%;
-    font-weight: bold;
-    font-size: 25px;
-    background-color: lightgrey;
 }
 
-.content_block{
+.site_name {
+    width: 92%;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 0 4%;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    background-color: #3971c6;
+}
+
+.content_block {
+    display: block;
+    width: 70%;
+    height: calc(100% - 70px);
+    float: left;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-right: 1px solid #3971c6;
+}
+
+.resume_block {
+    display: block;
+    width: 28%;
+    height: calc(100% - 70px);
+    float: left;
+
+    bottom: 0;
+}
+
+.content_block ul {
     display: block;
     list-style: none;
 }
 
 .text_block {
-    width: 68%;
-    height: 500px;
-    overflow: scroll;
+    width: 100%;
     display: block;
+    border-bottom: 1px solid #3971c6;
 }
 
-.first_text {
+.text_title {
     font-weight: bold;
-    font-size: 30px;
-    margin: 0 0 10px 20px;
+    font-size: 25px;
+    width: 92%;
+    margin: 0 5% 10px 3%;
 
-}
-
-.second_text {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0 0 10px 20px;
-}
-
-.resume_block {
-    width: 30%;
-    display: block;
-    background-color: lightgrey;
-    bottom: 0;
-}
-
-.first_resume, .second_resume {
-    display: block;
-    font-size: 15px;
-    margin: 0 0 0 1%;
-    padding: 0;
 }
 
 .text_time {
-    font-size: 15px;
-    margin: 0 0 10px 20px;
-    border-bottom: 1px solid black;
+    font-size: 12px;
+    width: 92%;
+    margin: 0 5% 10px 3%;
 }
+
+.text_content {
+    font-size: 20px;
+    width: 92%;
+    margin: 0 5% 10px 3%;
+}
+
+.resume_block ul {
+    display: block;
+    width: 90%;
+    font-size: 15px;
+    padding: 5%;
+}
+
+.resume_block ul li {
+    margin: 5% 0;
+}
+
