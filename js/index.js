@@ -56,6 +56,7 @@ eachText = {
 textList.push(eachText);
 $(function () {
     showListByJson("content_block", textList, "content_template");
+    fixBlockHeight();
 });
 
 function showFullContent(obj) {
@@ -65,3 +66,17 @@ function showFullContent(obj) {
         $(obj).addClass("open_full").text("【收起全文】").siblings(".text_full_content").show().prev().hide();
     }
 }
+
+function fixBlockHeight() {
+    var docHeight = $(document.body).height();
+    $("#content_block").height(docHeight - 70);
+    $("#resume_block").height(docHeight - 70);
+}
+
+window.onresize = function () {
+    fixBlockHeight();
+};
+
+window.onscroll = function () {
+    fixBlockHeight();
+};
