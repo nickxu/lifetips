@@ -47,7 +47,9 @@
         <li class="text_block" id="text_block">
             <div class="text_title"><@= eachData.textTitle @></div>
             <div class="text_time">发布日期：<@= eachData.textTime @></div>
-            <div class="text_content"><@= eachData.textContent @></div>
+            <div class="text_content"><@= eachData.textContent.replace(/^(.{30})[\s\S]+$/gi, "$1......").replace(/[\r\n]+/gi, "<br/>") @></div>
+            <div class="text_full_content"><@= eachData.textContent.replace(/[\r\n]+/gi, "<br/>") @></div>
+            <a class="text_more" onclick="showFullContent(this)">【展开全文】</a>
         </li>
         <@ }) @>
     </ul>

@@ -85,6 +85,20 @@ html, body {
     margin: 0 5% 10px 3%;
 }
 
+.text_full_content {
+    font-size: 20px;
+    width: 92%;
+    margin: 0 5% 10px 3%;
+    display: none;
+}
+.text_more {
+    display: block;
+    color: blue;
+    font-size: 20px;
+    width: 92%;
+    margin: 0 5% 10px 3%;
+}
+
 .resume_block ul {
     display: block;
     width: 90%;
