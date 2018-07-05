@@ -47,6 +47,18 @@ html, body {
     list-style: none;
 }
 
+.statistic_block {
+    width: 98%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #3971c6;
+    padding-left: 2%;
+    border-bottom: 1px solid #3971c6;
+}
+
 .text_block {
     width: 100%;
     display: block;
